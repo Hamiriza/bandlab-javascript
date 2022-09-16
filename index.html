@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My application</title>
+    <link rel="stylesheet" href="main.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>BandLab Javascript</h1>
+        <ul class="tabs">
+          <li class="tab is-active">
+            <a data-switcher data-tab="1">Page 1</a>
+          </li>
+          <li class="tab"><a data-switcher data-tab="2">Page 2</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="pages">
+        <div class="page is-active" data-page="1">
+          <h2>Page 1</h2>
+          <br />
+          <button class="button1">Fetch Posts</button>
+          <button class="button2">Sort Posts[A-Z]</button>
+          <button class="button3">Sort Posts[Z-A]</button>
+          <button class="button4">Group by user ID</button>
+          <br /><br />
+          <div class="content1"></div>
+        </div>
+        <div class="page" data-page="2">
+          <h2>Page 2</h2>
+          <br />
+          <input class="urlText" type="text" size="100" /><br />
+          <button class="button1 page2">Get Audio Data</button>
+          <button class="button2 page2">Play</button>
+          <button class="button3 page2">Stop</button>
+          <br /><br />
+          <div class="content2"></div>
+        </div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
